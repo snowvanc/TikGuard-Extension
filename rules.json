@@ -1,0 +1,73 @@
+[
+  {
+    "type": "INPUT",
+    "keywords": [
+      "whatsapp", "telegram", "line", "wechat", "zalo", "viber", "skype", 
+      "phone number", "contact me", "email", "gmail", "yahoo", 
+      "link in bio", "dm me", "pm me", "message me", "pay outside", 
+      "paypal", "bank transfer", "western union", "cash app", "venmo", 
+      "crypto", "bitcoin", "alipay", "send money"
+    ],
+    "message": "🚫 导流/交易违规：禁止引导站外交流与付款 / 🚫 Traffic Risk: Off-platform contact or payment detected"
+  },
+  {
+    "type": "INPUT",
+    "keywords": [
+      "nike", "adidas", "gucci", "chanel", "lv", "louis vuitton", 
+      "dior", "hermes", "prada", "versace", "rolex", "cartier", 
+      "balenciaga", "fendi", "burberry", "puma", "reebok", "supreme",
+      "yeezy", "jordan", "new balance", "vans", "converse", "oakley", "rayban"
+    ],
+    "message": "©️ 侵权高危：检测到奢侈品或运动大牌 / ©️ IP Risk: High-risk brand name detected"
+  },
+  {
+    "type": "INPUT",
+    "keywords": [
+      "apple", "iphone", "ipad", "macbook", "airpods", "samsung", "sony",
+      "nintendo", "playstation", "xbox", "disney", "lego", "pokemon", 
+      "marvel", "star wars", "hello kitty", "mickey", "peppa pig", "barbie"
+    ],
+    "message": "©️ 侵权高危：检测到知名科技或动漫IP / ©️ IP Risk: Copyrighted intellectual property"
+  },
+  {
+    "type": "INPUT",
+    "keywords": [
+      "gun", "knife", "weapon", "bullet", "sword", "drug", "weed", 
+      "marijuana", "cbd", "cocaine", "vape", "tobacco", "cigarette", 
+      "cigar", "nicotine", "sex toy", "vibrator", "adult", "porn", "dildo"
+    ],
+    "message": "⚔️ 禁售商品：涉嫌违禁品(武器/烟草/成人) / ⚔️ Banned Item: Prohibited goods detected"
+  },
+  {
+    "type": "INPUT",
+    "keywords": [
+      "fake", "counterfeit", "replica", "1:1", "copy", "clone", "knockoff", "dupe"
+    ],
+    "message": "⚠️ 假货违规：涉嫌售卖高仿或仿牌 / ⚠️ Counterfeit Risk: Replica or fake product detected"
+  },
+  {
+    "type": "INPUT",
+    "keywords": [
+      "100% cure", "cure cancer", "lose weight fast", "miracle", 
+      "anti-cancer", "medical grade", "fda approved", "burn fat", 
+      "diet pill", "skin whitening", "stop pain instantly", "guaranteed"
+    ],
+    "message": "⚕️ 夸大宣传：禁止极限词或虚假医疗承诺 / ⚕️ False Claim: Medical or exaggerated claims"
+  },
+  {
+    "type": "INPUT",
+    "keywords": [
+      "cash back for review", "5 star review", "five star review", 
+      "fake review", "giveaway for review", "refund for review", "pay for 5 stars"
+    ],
+    "message": "⭐ 刷单违规：诱导好评或操纵评论 / ⭐ Manipulation: Review manipulation detected"
+  },
+  {
+    "type": "LIVE",
+    "keywords": [
+      "violation", "suspended", "restricted", "counterfeit", "intellectual property", 
+      "traffic diversion", "shadowban", "under review", "penalty", "banned"
+    ],
+    "message": "🚨 系统风控：高危封号敏感词 / 🚨 System Risk: High-risk account penalty word"
+  }
+]

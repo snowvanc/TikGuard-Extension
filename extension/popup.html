@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin: 0; padding: 0;">
+  <div id="tg-popup-app">
+    <div class="tg-card tg-header-card">
+        <div class="tg-header-row">
+            <h3>TikGuard <span style="font-size:11px;color:#888;">V2.4</span></h3>
+            <select id="lang-select" class="tg-lang-switch">
+                <option value="auto">🌍 Auto</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="en">🇺🇸 EN</option>
+            </select>
+        </div>
+        <div id="status-free" class="tg-badge tg-free" data-i18n="statusFree">🛡️ 基础护航版</div>
+        <div id="status-pro" class="tg-badge tg-pro tg-hidden" data-i18n="statusPro">⚡ Pro 终极防封版</div>
+    </div>
+
+    <div class="tg-card">
+        <div class="tg-section-title" data-i18n="netTitle">🌍 节点纯净度监控与体检</div>
+        <div class="tg-info-row">
+            <span data-i18n="netCurrent">当前 IP</span>
+            <span id="ip-location" style="font-family: monospace; font-weight:bold; color:#007aff;">...</span>
+        </div>
+        
+        <div id="dirty-warn" class="tg-dirty-warn">🚨 危险：检测到当前网络为【机房/代理】！极易触发连坐封店，请使用独享住宅 IP！</div>
+        <div id="env-warn" class="tg-env-warn">⚠️ 高危：本地系统时区与 IP 节点国家严重不符，极易触发指纹风控！</div>
+        
+        <div class="tg-geo-box tg-pro-only tg-hidden">
+            <span style="font-size:12px; font-weight:bold; color:#d93025;" data-i18n="geoFence">🛡️ 专属安全国家</span>
+            <select id="geo-safe-country" class="tg-common-height" style="width: 120px; font-weight:bold;">
+                <option value="NONE" data-i18n="geoNone">未开启 (Off)</option>
+                <option value="US">🇺🇸 美国 (US)</option><option value="GB">🇬🇧 英国 (GB)</option>
+                <option value="SG">🇸🇬 新加坡 (SG)</option><option value="MY">🇲🇾 马来西亚 (MY)</option>
+                <option value="TH">🇹🇭 泰国 (TH)</option><option value="VN">🇻🇳 越南 (VN)</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="box-washer" class="tg-card tg-pro-only tg-hidden">
+        <div class="tg-section-title" data-i18n="washTitle">🖼️ 图片 100% 洗白引擎 (批量防查重)</div>
+        <div id="img-washer-zone" class="tg-img-washer-zone">
+            <span>🪄</span>
+            <p id="washer-text" data-i18n="washDrop">点击或拖拽图片至此<br>(支持按住Ctrl多选批量处理)</p>
+            <input type="file" id="washer-input" accept="image/*" multiple style="display:none;">
+        </div>
+    </div>
+
+    <div class="tg-card">
+        <div class="tg-section-title" data-i18n="calcTitle">💱 实时汇率计算</div>
+        <div class="tg-grid-2x2">
+            <div class="tg-cell"><span class="tg-label" data-i18n="calcAmount">金额 (Amount)</span><input type="number" id="calc-amount" class="tg-common-height" value="100"></div>
+            <div class="tg-cell"><span class="tg-label" data-i18n="calcFrom">持有货币</span>
+                <select id="calc-from" class="tg-common-height">
+                    <option value="USD">🇺🇸 USD 美元</option><option value="CNY">🇨🇳 CNY 人民币</option>
+                    <option value="EUR">🇪🇺 EUR 欧元</option><option value="GBP">🇬🇧 GBP 英镑</option>
+                </select>
+            </div>
+            <div class="tg-cell"><span class="tg-label" data-i18n="calcResult">换算结果</span><div id="calc-result" class="tg-common-height">...</div></div>
+            <div class="tg-cell"><span class="tg-label" data-i18n="calcTo">兑换为</span>
+                <select id="calc-to" class="tg-common-height">
+                    <option value="VND">🇻🇳 VND 越南盾</option><option value="THB">🇹🇭 THB 泰铢</option>
+                    <option value="MYR">🇲🇾 MYR 马来币</option><option value="PHP">🇵🇭 PHP 菲律宾比索</option>
+                    <option value="IDR">🇮🇩 IDR 印尼盾</option><option value="BRL">🇧🇷 BRL 巴西雷亚尔</option>
+                    <option value="SAR">🇸🇦 SAR 沙特里亚尔</option><option value="USD">🇺🇸 USD 美元</option>
+                    <option value="CNY">🇨🇳 CNY 人民币</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="box-activate" class="tg-card">
+        <div style="font-size:12px; color:#555; text-align:center; margin-bottom:10px;" id="activate-desc">
+            激活 Pro 解锁 <b>图片洗白 + Geo防关联盾 + 客服风控</b>
+        </div>
+        <div style="text-align: right; margin-bottom: 4px;">
+            <a href="https://ifdian.net/" target="_blank" title="请在爱发电点击您的头像进入【个人主页】，浏览器顶部网址最后面的那长串字符就是您的ID！" style="font-size: 10px; color: #888; text-decoration: underline;">❓不知道 ID 在哪？点此去爱发电查看</a>
+        </div>
+        <input type="text" id="license-key" class="tg-input-text" placeholder="输入爱发电用户 ID (或老用户激活码)">
+        <button id="btn-verify" class="tg-btn" data-i18n="actBtn">激活 / 已续费点此刷新</button>
+        <a id="btn-buy" class="tg-buy-link" data-i18n="actBuy">🛒 获取 Pro 护航特权 (订阅赞助)</a>
+        <p id="msg" style="color:#ff4d4f; font-size:11px; margin-top:5px; text-align:center;"></p>
+    </div>
+
+    <div id="box-pro" class="tg-card tg-hidden tg-pro-only" style="text-align:center;">
+        <button id="btn-sync" class="tg-btn" data-i18n="syncBtn">🔄 刷新风控云规则库</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

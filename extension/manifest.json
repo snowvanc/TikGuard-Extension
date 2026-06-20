@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "TikGuard - Seller Assistant",
+  "version": "2.4.1",
+  "description": "Risk Scanner | Geo-Fence Shield | Image Scrubber | Fat Finger Alert",
+  "permissions": [
+    "storage", 
+    "contextMenus", 
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png", 
+    "48": "icon.png", 
+    "128": "icon.png"
+  }
+}

@@ -1,0 +1,56 @@
+/* ==================== 弹窗专属样式 (紧凑瘦身版) ==================== */
+#tg-popup-app { width: 380px; background: #f4f6f8; margin: 0; padding: 10px; color: #333; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+#tg-popup-app * { box-sizing: border-box; }
+
+.tg-card { background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-bottom: 8px; border: 1px solid #eef0f2; }
+.tg-hidden { display: none !important; }
+
+.tg-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.tg-header-row h3 { margin: 0; font-size: 15px; font-weight: 800; color: #1a1a1a; letter-spacing: -0.5px;}
+.tg-lang-switch { border: 1px solid #ddd; border-radius: 4px; padding: 2px 4px; font-size: 11px; background: #fff; cursor: pointer; color: #555; outline: none; }
+.tg-badge { display: block; width: 100%; padding: 6px 0; border-radius: 6px; font-size: 12px; font-weight: bold; text-align: center; margin-bottom: 2px;}
+.tg-free { background: #e6f7ff; color: #007aff; border: 1px solid #bce0fd; }
+.tg-pro { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+
+.tg-section-title { font-weight: 600; font-size: 12px; color: #444; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #f0f0f0; display:flex; align-items:center; gap:6px;}
+.tg-grid-2x2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; row-gap: 8px; }
+.tg-cell { display: flex; flex-direction: column; }
+.tg-label { font-size: 11px; color: #888; margin-bottom: 3px; font-weight: 500; }
+.tg-common-height { width: 100%; height: 28px; padding: 0 6px; border: 1px solid #d9d9d9; border-radius: 4px; font-size: 12px; background: #fff; outline:none;}
+.tg-common-height:focus { border-color:#007aff; }
+#calc-result { background: #f0f9ff; color: #007aff; font-weight: 700; border-color: #bce0fd; display: flex; align-items: center; white-space: nowrap; overflow: hidden;}
+
+.tg-info-row { font-size: 12px; color: #444; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 8px; border-radius: 6px;}
+.tg-env-warn { background: #fff1f0; border: 1px solid #ffa39e; color: #cf1322; padding: 8px; border-radius: 6px; font-size: 11px; margin-top: 6px; font-weight: bold; display: none; line-height: 1.3;}
+.tg-dirty-warn { background: #fffbe6; border: 1px solid #ffe58f; color: #d46b08; padding: 8px; border-radius: 6px; font-size: 11px; margin-top: 6px; font-weight: bold; display: none; line-height: 1.3;}
+.tg-geo-box { margin-top: 6px; display: flex; justify-content: space-between; align-items: center; background: #fdf5e6; padding: 8px; border-radius: 6px; border: 1px solid #ffeeba; }
+
+.tg-img-washer-zone { border: 2px dashed #1890ff; background: #e6f7ff; padding: 12px 10px; text-align: center; border-radius: 6px; cursor: pointer; transition: all 0.3s;}
+.tg-img-washer-zone:hover { background: #bae0ff; border-color: #0050b3; }
+.tg-img-washer-zone p { margin: 4px 0 0; font-size: 11px; color: #0050b3; font-weight: bold; line-height: 1.4; }
+.tg-img-washer-zone span { font-size: 24px; }
+
+.tg-input-text { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 8px; box-sizing: border-box; font-size: 12px;}
+.tg-btn { width: 100%; padding: 8px; background: #1a1a1a; color: #fff; border: none; border-radius: 4px; font-weight: 600; font-size: 12px; cursor: pointer; transition: 0.2s; }
+.tg-btn:hover { opacity: 0.9; } .tg-btn:disabled { background: #ccc; cursor: not-allowed; }
+#btn-sync { background: #fff; color: #333; border: 1px solid #d9d9d9;}
+.tg-buy-link { display: block; text-align: center; font-size: 11px; color: #007aff; margin-top: 6px; text-decoration: none; cursor: pointer; font-weight: bold; }
+
+/* ==================== 网页注入防冲突样式 ==================== */
+.tg-ai-panel, .tg-toast, #tg-magic-btn, #tg-shield-icon, .tg-geo-alert, .tg-ip-alert { z-index: 2147483647 !important; font-family: sans-serif; }
+#tg-magic-btn { position: absolute; width: 32px; height: 32px; background: linear-gradient(135deg, #8e44ad, #9b59b6); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.3); font-size: 16px; border: 2px solid #fff; }
+.tg-ai-panel { position: absolute; background: #fff; padding: 10px; border-radius: 4px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); min-width: 260px; }
+.tg-risk-panel { border-left: 4px solid #ff4757; top: 100%; left: 0; margin-top: 5px; }
+.tikguard-risk-border { border: 2px solid #ff4757 !important; background: rgba(255, 71, 87, 0.05) !important; }
+.tg-btn-row { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.tg-btn-base { border: none; padding: 5px 10px; border-radius: 4px; font-size: 11px; font-weight: bold; cursor: pointer; color: #fff; }
+.tg-btn-fix { background: #ff4757; } .tg-btn-polish { background: #1890ff; } .tg-btn-title { background: #722ed1; } .tg-btn-tags { background: #fa8c16; } .tg-locked { background: #eee; color: #999; cursor: not-allowed; border: 1px dashed #ccc; }
+.tg-toast { position: fixed; top: 40px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.85); color: #fff; padding: 10px 20px; border-radius: 30px; font-size: 14px; pointer-events: none; }
+.tg-ip-alert { position: fixed; bottom: 80px; right: 20px; background: #fff; color: #333; border-left: 4px solid #ff4757; padding: 15px; border-radius: 4px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); min-width: 220px; }
+.tg-geo-alert { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #333; border-left: 6px solid #8e44ad; padding: 20px; border-radius: 6px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); min-width: 320px; }
+.tg-ip-title { font-weight: bold; color: #ff4757; margin-bottom: 8px; }
+.tg-geo-title { font-weight: 900; color: #8e44ad; margin-bottom: 10px; font-size: 16px; }
+.tg-ip-row { font-size: 13px; margin-bottom: 4px; }
+.tg-price-warn { border-left: 4px solid #faad14 !important; background: #fffbe6 !important; }
+.tg-btn-warn { background: #faad14 !important; }
+.tg-panel-close:hover { color: #ff4757 !important; transform: scale(1.1); }
